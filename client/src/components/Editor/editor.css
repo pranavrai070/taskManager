@@ -1,0 +1,39 @@
+
+.quill{
+    background-color: #F9F9F9;
+    height:30vh;
+    width:80%;
+    word-wrap: break-word;
+    float: right;
+    max-width: 25rem;
+   
+
+}
+
+.quillheading{
+    text-align: center;
+}
+
+
+
+.ql-editor p{
+    color: black;
+    font-size: 14px;
+}
+
+@media (max-width: 786px){
+    .quill{
+        width: 95%;
+        max-height: 50%;
+        font-size: 10px;
+        float: left;
+    }
+
+    .ql-editor p{
+        font-size: 12px;
+    }
+}
+
+
+
+

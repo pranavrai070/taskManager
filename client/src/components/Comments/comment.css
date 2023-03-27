@@ -1,0 +1,129 @@
+.comment_box{
+    margin-bottom: 0.7rem;
+    border-color: rgb(219, 218, 217);
+    border-style:solid ;
+    border-width: 0.5px;
+    max-width: 95%;
+    word-wrap: break-word;
+   
+}
+
+#comment_heading{
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #3c4fe0;
+}
+
+
+
+#user_name{
+    color: rgb(155, 156, 156);
+    font-weight: bold;
+    
+}
+
+.text_comment{
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.comment_btn{
+    margin-top: -0.5rem
+}
+
+.edit_btn{
+    font-size: 12px;
+    margin-left: 1rem;
+    width: 3rem;
+    height: 1.5rem;
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+   
+}
+
+.delete_btn{
+    margin-left: 1rem;
+    height: 1.5rem;
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+   
+    font-size: 12px;
+}
+
+
+.commentSection{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    gap: 3rem;
+    width: 100%;
+}
+
+
+.comment_text{
+    resize: none;
+    height: 4rem;
+    max-width: 15rem;
+    font-size: 12px;
+    min-width: 60%;
+}
+
+/* .comment_text:focus{
+    border-width: 0.5px;
+    border-color: blue;
+    background-color: rgb(211, 243, 243);
+    border-style: none;
+} */
+
+.add_btn{
+    height: 2.5rem;
+    width: 6rem;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(83, 148, 245);
+    padding-left: 16px;
+    padding-right: 16px;
+    border-style: none;
+    transition: box-shadow .15s,transform .15s;
+    font-size: 18px;
+}
+
+
+
+.add_btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+@media(max-width:400px){
+    .comment_box{
+        width: 80%;
+    }
+
+    .add_btn{
+        height: 2rem;
+        width: 4rem;
+        margin-right: 1rem;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+    }
+
+    .commentSection{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .comment_text{
+       
+        height: 3rem;
+        max-width: 95%;
+        
+    }
+}
+
+

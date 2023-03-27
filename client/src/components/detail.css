@@ -1,0 +1,103 @@
+ 
+.editor{
+    text-align: start;
+    /* position:absolute; */
+    z-index: 1;
+    /* top:12rem; */
+    /* backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%); */
+    width: 70%;
+    margin: 0 auto;
+    max-width:70% ;
+    height: 65vh;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 10px 10px #ccc;
+    background : linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.exitbtn{
+  float: right;
+  margin-top: -2.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 18px;
+  border-style: none;
+  font-weight: 800;
+}
+
+#task_detail{
+  display: flex;
+  font-weight: bold;
+  gap: 10rem;
+}
+
+#task_detail p{
+  font-size: 14px;
+  color: black;
+}
+
+
+#quillEditor{
+    max-height: 30vh;
+    margin-top: -1rem;
+    border-style: none;
+}
+
+.editor .ql-toolbar.ql-snow{
+    display: none;
+}
+
+
+
+.editorh3{
+  text-align: center;
+  font-weight: 800;
+  color: brown;
+  margin-left: 2rem;
+  width: 80%;
+}
+
+
+ @media (max-width:780px){
+
+  .editor{
+      max-width:80% ;
+      width: 90%;
+      height: 60vh;
+      margin-top: 7rem;
+      margin-top: 1rem;
+      box-shadow: 5px 5px 8px 4px rgba(0,0,0,0.2);
+  }
+
+  #quillEditor{
+    max-height: 25vh;
+  }
+
+  
+}
+
+    
+@media (max-width:400px){
+  .editor{
+    max-width: 80%;
+    height: 75%;
+    background-color: rgb(206, 205, 205);
+    z-index: 2;
+  }
+
+  .editorh3{
+    font-size: 14px;
+  }
+
+  .exitbtn{
+    position: relative;
+    margin-top: -28px;
+  }
+
+}
+       
+
+
+
+
+

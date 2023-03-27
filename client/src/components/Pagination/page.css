@@ -1,0 +1,17 @@
+#div1{
+    text-align: center;
+    
+   
+}
+
+.pagination{
+    width: auto;
+    margin: auto;
+}
+
+@media(max-width:400px){
+    .pagination{
+        width: 90%;
+        font-size: 10px;
+    }
+}

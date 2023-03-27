@@ -1,0 +1,144 @@
+.taskform{
+ display: flex;
+ justify-content: space-evenly;
+ gap: 0rem;
+ margin-top: 0.1rem;
+ background-color: rgb(251, 247, 247);
+ border-radius: 20px;
+ width:75%;
+ height: 58vh;
+ margin: auto;
+ padding: 10px 25px;
+ box-shadow:  0 0 rgba(0, 0, 0, 5),  0.1em 0.1em 0.6em  rgba(159, 158, 158, 0.3)
+}
+
+.mb-3{
+   /* width: 90%; */
+   /* display: block; */
+   /* width: 40%; */
+   height: auto;
+   min-width: 35%;
+}
+
+.saveBtn{
+    margin-left: 5px;
+}
+
+.heading h1{
+    margin-top: 0rem;
+    color: rgb(195, 83, 83);
+    font-size: 2em;
+}
+
+.taskformbtn{
+    margin-left: 2.5px;
+}
+
+.valid{
+    box-shadow: 10rem;
+    background-color: #061292;
+}
+
+.taskmsg{
+     font-size: 14px;
+    }
+
+.enterTask {
+    font-family: "Poppins", sans-serif;
+     width: 100%;
+    resize: none;
+    height: 2.5rem;
+    outline: none;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    max-height: 100px;
+    border: 1px solid #bfbfbf;
+    margin-top: 2rem;
+  }
+  .enterTask::placeholder{
+    color: #6b6a6a;
+  }
+  .enterTask:is(:focus, :valid){
+    padding: 14px;
+    border: 1px solid #98b3fd;
+  }
+  .enterTask::-webkit-scrollbar{
+    width: 0px;
+  }
+
+
+  .dueDate{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .duedateCal{
+    width: 6rem;
+    height: 1.5rem;
+    font-size: 12px;
+    border-radius: 5px;
+    border-width: 1px;
+   
+}
+
+  .dueDate label{
+    font-size: 1em;
+   
+    height:1.5rem;
+   
+} 
+
+
+
+
+   @media (max-width: 786px){
+    .taskform{
+        display: grid;
+        height: 75vh;
+        width: 80%;
+        overflow-y: scroll;
+    }
+
+    .enterTask{
+        margin-top: 0;
+        
+    }
+
+    .mb-3{
+      width: 100%;
+    }
+
+   
+}
+
+
+
+@media (max-width: 450px) {
+    .taskform{
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    .mb-3{
+        width: 100%;
+    }
+
+    .enterTask{
+        font-size: 16px;
+        padding: 12px;
+    }
+    .duedateCal{
+      width: 5rem;
+      font-size: 10px;
+    }
+  
+    .dueDate label{
+      font-size: 0.8em;
+    }
+}
+
+
+

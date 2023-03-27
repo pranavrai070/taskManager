@@ -1,0 +1,90 @@
+.date{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 25px;
+    margin-bottom:-20px;
+    margin-right: 14rem; */
+    margin: auto;
+    margin-top: 2rem;
+  }  
+       
+.headDate{
+   font-size: 3vw;
+   /* margin-left: 12rem; */
+   color: blueviolet;
+   position: relative;
+ }
+
+.calender{
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 5px;
+    padding:  14px;
+    color:black;
+    border-width: 0.5px;
+    justify-content: center;
+  }
+
+
+
+
+@media (max-width: 768px)  {
+    .date{
+      margin: auto;
+      margin-top: 3rem;
+     }
+
+   .date p{
+        font-size: 28px;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+
+    .calender{
+      padding: 8px;
+      width: 8.5rem;
+      font-size: 14px;
+      }
+
+    }
+
+
+
+  
+@media (max-width: 400px) {
+        .date p{
+          font-size: 15px;
+          margin-top: 15px;
+          font-weight: bold;
+        }
+
+        .date{
+         margin: auto;
+         margin-top: 1rem;
+        }
+
+        .calender{
+           font-size:11px ;
+           width: 7rem;
+           height: 1.7rem;
+         }
+
+  }  
+
+
+
+
+  
+
+ 
+    
+   
+   
+   
+   
+   
+  
+
+
+

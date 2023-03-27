@@ -1,0 +1,152 @@
+
+ 
+ .homehead{
+display: flex;
+/* margin-top: 0.2rem; */
+/* margin-left: 2rem; */
+/* margin-right: 2rem; */
+background-color: white;
+height: 84vh;
+
+
+}
+
+.aboutUs h1{
+ color: rgb(98,232,98);
+ font-size: 2.8em;
+ text-align: center;
+}
+
+.aboutUs p{
+ color: #000;
+ font-size: 16px;
+ text-align: center;
+ font-family: cursive;
+}
+
+.homeIMG{
+    width:480px;
+}
+
+.aboutUs{
+    margin-top: 3rem;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    justify-content: center;
+    border-style: none;
+}
+
+.discoverbtn{
+margin-top: 4rem;
+text-align: center;
+}
+
+.homediscoverbtn{
+    cursor: pointer;
+    height: 4rem;
+    width: 12rem;
+    font-size: 20px;
+    padding: 10px;
+    border: 0.1em solid #ffffff;
+    border-radius: 10px;
+    font-weight: 800;
+    color: #f3eeee;
+    text-align: center;
+    background-color: rgb(106, 200, 247);
+}
+
+.homediscoverbtn:hover{
+    color: white;
+    background-color:rgb(227, 35, 144);
+    box-shadow: 0px 5px 20px rgba(122, 193, 251, 0.728);
+}
+
+.downloadbtn{
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    margin-top:3rem;
+}
+
+.playstore, .apple{
+margin:5px;
+padding:5px;
+border-radius: 5px;
+width:150px;
+height: 50px;
+background-color: rgb(255, 255, 255);
+
+border-width: 1px;
+}
+
+
+.playstore:hover, .apple:hover{
+    color: white;
+    background-color: rgb(104, 201, 243);
+    border: 0.1em solid #ffffff;
+    box-shadow: 0px 5px 20px rgba(122, 193, 251, 0.728);
+}
+
+.brandicon{
+    width:30px;
+    height: 30px;
+    position: relative;
+    padding: 2px;
+    right: 8px;
+}
+
+
+   /* media query */
+@media (max-width:768px){
+
+    .homehead{
+         display: grid;
+         height: max-content;
+        }
+
+    .homeIMG{
+         width: 50%;
+         /* margin-left: 8rem; */
+         margin: auto;
+         margin-top: 2rem;
+        }
+
+    .discoverbtn{
+            margin-top: 4rem;
+        }
+
+    .aboutUs h1{
+            font-size: 2.4em;
+           
+        }
+  
+}
+
+    
+@media (max-width:400px){
+
+    .homeIMG{
+      width: 60%;
+      margin-left: 50px;
+    }
+
+        
+    .aboutUs{
+        margin-top: 2rem;
+        width: 95%;
+    }
+
+    .aboutUs p{
+        font-size: 10px;
+        margin-right: 2rem;
+    }
+
+    .aboutUs h1{
+        font-size: 1.5em;
+    }
+            
+    .downloadbtn{
+        display: grid;
+        }    
+    }

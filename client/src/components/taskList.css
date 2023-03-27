@@ -1,0 +1,247 @@
+
+h5{
+  text-align: center;
+}
+
+.task_name{
+  text-align: start;
+  max-width: fit-content;
+  font-size: 12px;
+  cursor: pointer;
+  color: #000;
+}
+
+.tablediv{
+  width: 80%;
+  margin: auto;
+  height: auto;
+  box-shadow: 5px 5px 8px 4px rgba(0,0,0,0.2);
+  background-color:#f7f8f9;
+}
+
+table{
+  table-layout: fixed;
+}
+
+.table thead{
+  background-color: #b501c2;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  font-weight: 600;
+	color: #ffffff;
+	padding: 6px;
+  border: 1px solid#fdfdfd85;
+}
+
+.table tbody tr td{
+	word-wrap: break-word;
+	font-size: 12px;
+	font-weight: normal;
+	color: #080808;
+	background-color: #f7f8f9;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #dee2e685;
+  justify-content: center;
+  
+}
+
+.listBtn{
+    width: 4rem;
+    height: 1.8rem;
+    color: black;
+    background-color: rgb(246, 219, 219);
+    border-radius:8px ;
+    border-width: 0.1px;
+    margin:3px;
+    cursor: pointer;
+    border-style: none;  
+}
+
+thead .srNo{
+    text-align: left;
+    width: 7rem;
+    font-weight: bold;
+    justify-content: center;
+    border-right: white;
+    border-right-width:2px ;
+}
+
+.active:hover{
+    color: white;
+    background-color: blue;
+    border-color: white;
+}
+  
+.pending:hover{
+    color: #000;
+    background-color: yellow;
+    border-color: white;
+}
+  
+.done:hover{
+    color: #fff;
+    background-color: green;
+    border-color: white;
+}
+  
+.delete:hover{
+    color: #fff;
+    background-color: red;
+    border-color: white;
+}
+
+.edittask-box form{
+    margin: 0;
+}
+
+.wrapper textarea{
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  resize: none;
+  height: auto;
+  outline: none;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 10px;
+  max-height: 200px;
+  border: 1px solid #bfbfbf;
+}
+textarea::placeholder{
+  color: #b3b3b3;
+}
+textarea:is(:focus, :valid){
+  padding: 14px;
+  border: 1px solid #98b3fd;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+  
+
+.edittask-box button{
+    margin: 1rem .5rem;
+    color: black;
+    background-color: rgba(255, 255, 0, 0.283);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #b501c2;
+    width:5rem;
+    height: 1.5rem;
+}
+
+.edittask-box button:hover{
+  box-shadow: 0px 1px 10px rgba(122, 193, 251, 0.728);
+  color: #fff;
+  background-color: #0188c2;
+}
+  
+.noRecord{
+    text-align: center;
+    color: black;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+}
+  
+.editbtn{
+  width:17px;
+  height:17px;
+  float: right;
+  margin-top: -1.2rem;
+}
+  
+.editbtn:hover{
+  width:20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+
+
+@media(max-width: 786px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+
+	.table tr{
+		margin-bottom: 5px;
+	}
+
+	.table tbody tr td{
+		text-align: center;
+		padding-left: 50%;
+		position: relative;
+    font-size: 12px;
+	}
+
+	.table td:before{
+		content:attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-weight: 600;
+		font-size: 14px;
+		text-align: left;
+  }
+
+  .table tbody tr td{
+      background-color: rgb(224, 253, 253);
+  }
+
+  .listBtn{
+      width: 4rem;
+      height: 1.5rem;
+      border-radius:4px ;
+      border-width: 0.1px;
+      margin:3px;
+  }
+
+  .task_name{
+    max-width: 85%;
+    text-align: center;
+  }
+
+}
+
+
+  @media (max-width:400px){
+    .listBtn{
+      width: 3rem;
+      height: 1rem;
+      border-radius:4px ;
+      border-width: 0.1px;
+      margin:3px;
+     
+    }
+
+    .table td:before{
+      font-size: 12px;
+    }
+
+    .table tbody tr td{
+     
+      font-size: 10px;
+    }
+
+    .editbtn:hover{
+      width:15px;
+      height: 15px;
+      cursor: pointer;
+      }
+}
+
+
+
+
+   
+ 
